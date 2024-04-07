@@ -12,7 +12,7 @@ app.use(cors()); // Allow all origins (not recommended for production)
 
 //routes
 app.use("/v1", userRoute);
-const port = https://vercel.com/abeladmassu16s-projects;
+const port = https://github.com/Abeladmassu16/Music-List-API/blob/main/
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
