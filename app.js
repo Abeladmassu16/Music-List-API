@@ -12,7 +12,7 @@ app.use(cors()); // Allow all origins (not recommended for production)
 
 //routes
 app.use("/v1", userRoute);
-const port = 3131;
+const port = https://vercel.com/abeladmassu16s-projects;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
