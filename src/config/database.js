@@ -1,14 +1,8 @@
-const mysql = require("mysql2");
+const { Sequelize } = require('sequelize');
 
-const conn = mysql.createConnection({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  efine: {
-    timestamps: false,
-  },
+const sequelize = new Sequelize('music_list', 'root', '', {
+  host: 'localhost',
+  dialect: 'mysql', 
 });
 
-module.exports = conn;
+module.exports = sequelize; 
